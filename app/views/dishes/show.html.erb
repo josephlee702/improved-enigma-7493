@@ -10,7 +10,7 @@
     </li>
   <% end %>
   
-<%= form_with url: "/dishes/#{@dish.id}", method: :post, local: true do |i| %>
+<%= form_with url: "/dishes/#{@dish.id}/ingredients", method: :post, local: true do |i| %>
   <%= i.label "Add an ingredient" %>
   <%= i.text_field "search" %>
   <%= i.submit "Add Ingredient" %>

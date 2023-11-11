@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/dishes/:dish_id", to: "dishes#show"
-  post "/dishes/:dish_id", to: "dish_ingredients#create"
+  post "/dishes/:dish_id/ingredients", to: "dish_ingredients#create"
 
   get "/chefs/:chef_id", to: "chefs#show"
 
